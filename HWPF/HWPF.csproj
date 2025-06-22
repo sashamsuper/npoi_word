@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <ProjectGuid>{F040162E-F6F3-4B09-809B-3095A07A6687}</ProjectGuid>
+    <RootNamespace>NPOI.HWPF</RootNamespace>
+    <AssemblyName>NPOI.ScratchPad.HWPF</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <FileUpgradeFlags />
+    <UpgradeBackupLocation />
+    <AssemblyTitle>HWPF</AssemblyTitle>
+    <Product>HWPF</Product>
+    <Copyright>Copyright ©  2009</Copyright>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <FileVersion>1.3.0.0</FileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <OutputPath>..\..\solution\Lib\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>2.5.7</Version>
+    <PackageProjectUrl>https://github.com/IllidanS4/npoi</PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageId>ScratchPad.NPOI.HWPF</PackageId>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="npoi.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Model\HWPFStream.cs" />
+    <Compile Remove="Model\Prm0.cs" />
+    <Compile Remove="Model\FIB\FIB.cs" />
+    <Compile Remove="Model\FIB\FIBBase.cs" />
+    <Compile Remove="Model\FIB\FIBCswNew.cs" />
+    <Compile Remove="Model\FIB\FibRgFcLcb.cs" />
+    <Compile Remove="Model\FIB\FibRgFcLcb2000.cs" />
+    <Compile Remove="Model\FIB\FibRgFcLcb2002.cs" />
+    <Compile Remove="Model\FIB\FibRgFcLcb2003.cs" />
+    <Compile Remove="Model\FIB\FibRgFcLcb2007.cs" />
+    <Compile Remove="Model\FIB\FibRgFcLcb97.cs" />
+    <Compile Remove="Model\FIB\FibRgLw97.cs" />
+    <Compile Remove="Model\FIB\FibRgW97.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.3.1" />
+    <PackageReference Include="NPOI" Version="2.6.2" />
+    <PackageReference Include="SharpZipLib" Version="1.4.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.10" />
+    <PackageReference Include="System.Formats.Asn1" Version="6.0.1" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.3" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+</Project>

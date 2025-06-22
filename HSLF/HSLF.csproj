@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <ProjectGuid>{EB09BCCA-0B45-4984-B4E6-BAD8C0A9F8A9}</ProjectGuid>
+    <RootNamespace>NPOI.HSLF</RootNamespace>
+    <AssemblyName>NPOI.ScratchPad.HSLF</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <FileUpgradeFlags />
+    <UpgradeBackupLocation />
+    <AssemblyTitle>HSLF</AssemblyTitle>
+    <Product>HSLF</Product>
+    <Copyright>Copyright ©  2010</Copyright>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>2.5.6</Version>
+    <PackageProjectUrl>https://github.com/IllidanS4/npoi</PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageId>ScratchPad.NPOI.HSLF</PackageId>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="npoi.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Model\ActiveXShape.cs" />
+    <Compile Remove="Model\AutoShape.cs" />
+    <Compile Remove="Model\AutoShapes.cs" />
+    <Compile Remove="Model\Background.cs" />
+    <Compile Remove="Model\Fill.cs" />
+    <Compile Remove="Model\Freeform.cs" />
+    <Compile Remove="Model\HeadersFooters.cs" />
+    <Compile Remove="Model\Hyperlink.cs" />
+    <Compile Remove="Model\Line.cs" />
+    <Compile Remove="Model\MasterSheet.cs" />
+    <Compile Remove="Model\MovieShape.cs" />
+    <Compile Remove="Model\Notes.cs" />
+    <Compile Remove="Model\OLEShape.cs" />
+    <Compile Remove="Model\Picture.cs" />
+    <Compile Remove="Model\Placeholder.cs" />
+    <Compile Remove="Model\Polygon.cs" />
+    <Compile Remove="Model\PPFont.cs" />
+    <Compile Remove="Model\PPGraphics2D.cs" />
+    <Compile Remove="Model\Shape.cs" />
+    <Compile Remove="Model\ShapeFactory.cs" />
+    <Compile Remove="Model\ShapeGroup.cs" />
+    <Compile Remove="Model\ShapeOutline.cs" />
+    <Compile Remove="Model\ShapePainter.cs" />
+    <Compile Remove="Model\ShapeTypes.cs" />
+    <Compile Remove="Model\Sheet.cs" />
+    <Compile Remove="Model\SimpleShape.cs" />
+    <Compile Remove="Model\Slide.cs" />
+    <Compile Remove="Model\SlideMaster.cs" />
+    <Compile Remove="Model\Table.cs" />
+    <Compile Remove="Model\TableCell.cs" />
+    <Compile Remove="Model\TextBox.cs" />
+    <Compile Remove="Model\TextPainter.cs" />
+    <Compile Remove="Model\TextRun.cs" />
+    <Compile Remove="Model\TextShape.cs" />
+    <Compile Remove="Model\TitleMaster.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NPOI" Version="2.5.6" />
+    <PackageReference Include="SharpZipLib" Version="1.4.0" />
+  </ItemGroup>
+</Project>
