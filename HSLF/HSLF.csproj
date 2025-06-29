@@ -35,7 +35,6 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-    <None Include="npoi.snk" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Model\ActiveXShape.cs" />
@@ -73,6 +72,9 @@
     <Compile Remove="Model\TextRun.cs" />
     <Compile Remove="Model\TextShape.cs" />
     <Compile Remove="Model\TitleMaster.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="npoi.snk" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NPOI" Version="2.5.6" />
