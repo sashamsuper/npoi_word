@@ -9,9 +9,9 @@
     <UpgradeBackupLocation />
     <AssemblyTitle>HWPF</AssemblyTitle>
     <Product>HWPF</Product>
-    <Copyright>Copyright ©  2025</Copyright>
-    <!--<AssemblyVersion>1.3.0.0</AssemblyVersion>
-    <FileVersion>1.3.0.0</FileVersion>-->
+    <Copyright>Copyright ©  2009</Copyright>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <FileVersion>1.3.0.0</FileVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
