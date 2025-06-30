@@ -21,13 +21,13 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore ./WrapperNetPOI/WrapperNetPOI.csproj
+      run: dotnet restore ./HWPF/HWPF.csproj
     - name: Build
-      run: dotnet build ./WrapperNetPOI/WrapperNetPOI.csproj --no-restore
+      run: dotnet build ./HWPF/HWPF.csproj --no-restore
     - name: Test
-      run: dotnet test ./WrapperNetPOI/WrapperNetPOI.csproj --no-build --verbosity normal
+      run: dotnet test ./HWPF/HWPF.csproj --no-build --verbosity normal
     - name: Publish  
       uses: brandedoutcast/publish-nuget@v2.5.4 
       with:
-        PROJECT_FILE_PATH: ./WrapperNetPOI/WrapperNetPOI.csproj  
+        PROJECT_FILE_PATH: ./HWPF/HWPF.csproj  
         NUGET_KEY: ${{secrets.NUGET_KEY_REPR}} 
