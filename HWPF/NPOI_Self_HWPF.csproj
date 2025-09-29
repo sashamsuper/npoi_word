@@ -2,8 +2,8 @@
   <PropertyGroup>
     <ProductVersion>17.14.5</ProductVersion>
     <ProjectGuid>{51E9E136-C574-432B-A8F5-316CC949C8AB}</ProjectGuid>
-    <RootNamespace>NPOI.Self.HWPF</RootNamespace>
-    <AssemblyName>NPOI.Self.HWPF</AssemblyName>
+    <RootNamespace>Self.HWPF</RootNamespace>
+    <AssemblyName>Self.HWPF</AssemblyName>
     <TargetFramework>netstandard2.0</TargetFramework>
     <FileUpgradeFlags />
     <UpgradeBackupLocation />
@@ -33,7 +33,7 @@
     <Version>2.6.2-alpha</Version>
     <!--<PackageProjectUrl>https://github.com/IllidanS4/npoi</PackageProjectUrl>-->
     <PackageLicenseUrl></PackageLicenseUrl>
-    <PackageId>NPOI.Self.HWPF</PackageId>
+    <PackageId>Self.HWPF</PackageId>
   </PropertyGroup>
   <!--><ItemGroup>
     <Compile Remove="Model\HWPFStream.cs" />
@@ -61,8 +61,5 @@
     <PackageReference Include="System.Formats.Asn1" Version="6.0.1" />
     <PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.3" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Backup\" />
   </ItemGroup>
 </Project>
